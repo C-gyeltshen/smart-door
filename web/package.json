@@ -1,0 +1,32 @@
+{
+  "name": "smart-door-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "telegram:poll": "node --env-file=.env scripts/telegram-poll.mjs",
+    "telegram:webhook": "node --env-file=.env scripts/set-webhook.mjs",
+    "simulate": "node --env-file=.env scripts/simulate-device.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
+    "bcryptjs": "^3.0.3",
+    "drizzle-orm": "^0.45.4",
+    "jose": "^6.2.13",
+    "next": "15.5.28",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^16.4.7",
+    "drizzle-kit": "^0.31.11",
+    "typescript": "^5"
+  }
+}
